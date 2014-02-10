@@ -1,0 +1,17 @@
+extends ../layout
+
+block mv-title
+  title Documentation - Mailvelope
+  meta(name="description", content="Installation from Chrome Web Store. OpenPGP key handling: key generation, key import, key export. Message encryption and decryption.")
+
+block mv-header
+  link(href="css/help.css", rel="stylesheet")
+
+block mv-body
+    body(data-spy="scroll", data-target=".mv-docs-sidebar")
+      block mv-navbar
+      .container
+          include ../incl/help.html
+          hr
+          footer &copy; Thomas Oberndörfer 2012
+      include ../incl/scripts    

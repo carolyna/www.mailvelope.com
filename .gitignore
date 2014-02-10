@@ -1,0 +1,6 @@
+*~
+.directory
+*.sublime*
+.svn
+node_modules
+public/*

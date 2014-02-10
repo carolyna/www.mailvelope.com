@@ -1,0 +1,40 @@
+.row.hero-unit.mv-header
+  h1 Mailvelope
+
+.row.post
+  .span8.offset2
+    .page-header.text-info
+      h2
+        a(href='/blog/release-v0.7.0') Release v0.7.0
+    .post-date.muted November 4, 2013
+    p More than seven months have passed since our last major release, and today we are excited to announce the availability of Mailvelope <b>v0.7.0</b>.
+    h4 Improved key grid and key import
+    p The performance of the key grid has been optimized in order to reduce the initial loading time and allow the handling of a large number of keys. The key import function has undergone a complete rewrite and now provides a better logging mechanism for warnings and errors during the import process.
+    h4 Identify public key in email body
+    p One way to exchange keys is by email. When the public key as armored text is part of the email body, Mailvelope can detect the key and mark it with an overlay as is the case with encrypted messages:
+    .thumbnail.well
+      img.img-rounded(src='img/1click_key_import.png' alt='one click key import')
+    p On clicking, the Mailvelope options dialog opens and the key is automatically imported.
+    h4 Firefox add-on nearing completion
+    p Work on the Firefox version of Mailvelope has progressed and the feature set is now almost identical to the Chrome extension. Only the decrypt inline scenario is currently not feasible due to technical limitations. Instead, the Firefox add-on will always display decrypted messages in a pop-up window. Also, the performance needs further improvements before we can officially release the Firefox add-on.
+    p Find the latest packages for both platforms in the <a href="https://github.com/toberndo/mailvelope/releases" target="_blank">releases section</a> on GitHub.
+    h4 More improvements and fixes
+    p Among others, Mailvelope now generates 2048-bit RSA keys by default, fixes wrong encoding of non-ASCII characters in messages and adds a reference to Mailvelope in the PGP header comment. See <a href="https://github.com/toberndo/mailvelope/blob/master/Changelog.md" target="_blank">changelog</a> for a complete list of changes.
+    p Mailvelope v0.7.0 for Chrome is now available in the <a href="https://chrome.google.com/webstore/detail/mailvelope/kajibbejlbohfaggdiogboambcijhkke" target="_blank">Chrome Web Store</a>.  
+
+.row.post
+  .span8.offset2
+    .page-header.text-info
+      h2
+        a(href='/blog/security-audit-and-v0.6-release') Security audit and release v0.6
+    .post-date.muted March 7, 2013
+    p Mailvelope v0.6 is released today with a major redesign focusing on security. An audit done by <a href="http://cure53.de/" target="_blank">Cure53</a> started end of December 2012 and evaluated Mailvelope’s security implementation and its security design aspects. In the course of two months we worked together with Cure53 on new concepts to prevent any form of leak of sensitive user data and at the same time do not degrade the user experience. The complete penetration report may be reviewed <a href="http://cure53.de/pentest-report_mailvelope.pdf" target="_blank">here</a>.
+    p Highlights of this new release include:
+    ul
+      li Mailvelope comes now with an external editor to compose mails. The process to write and encrypt mails is thereby completely isolated from the mail provider.
+      li A security token is displayed on all dialog windows, allowing to clearly identify the origin of the dialog.
+      li Two options to displays decrypted messages: on the mail provider page or in a separate popup.
+      li Passwords for private keys can be cached in memory which accelerates the decryption process.
+    p See also the <a href="#{origin}/help#security" target="_blank">security section</a> in the documentation for more details.
+    p
+      em We would like to thank the Open Technology Fund (RFA) for sponsoring the security audit. Without this funding the optimizations in the new release of Mailvelope would not have been possible. Thanks go also to Mario Heiderich and Krzysztof Kotowicz from Cure53 for their contributions.
