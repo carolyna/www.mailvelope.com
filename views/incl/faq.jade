@@ -36,7 +36,7 @@
       h4 Origins
     #purpose
       h4 What is the purpose of this project?
-    p Mailvelope is an easy-to-use web-browser extension which brings OpenPGP encryption to webmail services such as Gmail™, Yahoo™ and others. With its unintrusive interface which fully integrates into your webmail service, Mailvelope instantly secures your personal and professional email communications.
+    p Mailvelope is an easy-to-use web-browser extension which brings OpenPGP encryption to webmail services such as Gmail™, Yahoo™ and others. With its unintrusive interface fully integrated into your webmail service, Mailvelope instantly secures your personal and professional email communications.
     #history
       h4 What is the history of this project?
     p A well-known ancestor of this project is FireGPG developed by Maximilien Cuony and others starting around 2007 and discontinued in 2010. Mailvelope is new development without a dependency to GPG. It's based on <a href='http://www.openpgpjs.org/'>OpenPGP.js</a> which is an open source project that was initially developed by recurity-labs.com. Mailvelope's development started in March 2012 and is available in the Chrome Web Store since August 2012.
@@ -54,11 +54,11 @@
       h4 Where are my keys stored?
     p Mailvelope stores the keys in the local storage of the browser and only there. This is a file in the user data directory <a href='http://www.chromium.org/user-experience/user-data-directory' target='_blank'>of Chrome</a>. If you clear temporary browsing data this will not affect the key storage of Mailvelope. If you delete the Mailvelope extension then also the key storage will be removed from your file system.
     #permissions
-      h4 When I install the extension it asks for the following permissions: "This extension can access: Your data on all websites, Your tabs and browsing activity". Why is this required?
+      h4 When I install the extension it asks for the following permissions: "This extension can access: Your data on all websites, Your tabs and browsing activity." Why is this required?
     p The reasons why these permissions are required are the following:
-    p Why data on website?
-    p Mailvelope scans the website of your web-mail provider for PGP messages. As soon as a message is found it injects a small portion of HTML into the site that will display the user interface elements for Mailvelope like encrypt buttons, the frame that is drawn around the PGP text, etc... For these operations it is required to access the data of the website.
+    p Why data on websites?
+    p Mailvelope scans the website of your webmail provider for PGP messages. As soon as a message is found it injects a small portion of HTML into the site to display the user interface elements for Mailvelope, such as the encryption buttons, the frame that is drawn around the PGP text, etc. For these operations, Mailvelope requires access to data on websites.
     p Why data on all websites?
-    p Mailvelope comes preconfigured for a set of web-mail provider but it can be extended to work theoretically for all providers. This means you can add your favorite web-mail provider to a watch list and it is then also part of the scanning process as described above. Mailvelope can not know which kind of providers will be added, it needs to have access to all website to stay customizable.
+    p Mailvelope comes preconfigured for a set of webmail providers, but it can be extended to work theoretically with all providers. This means you can add your favorite webmail provider to a watch list and it is then also part of the scanning process described above. Since Mailvelope cannot know which providers will be added, it needs to have access to all websites to stay customizable.
     p Why your tabs and browsing activity?
-    p This permission is required to open the options page when you click on the browser action 'Options' of Mailvelope. And also to inject the elements for the Mailvelope user interface as described above.
+    p This permission is required to open the options page when you click on Mailvelope's 'Options' browser action. It also allows Mailvelope to inject the elements for its user interface as described above.
