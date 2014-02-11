@@ -1,4 +1,3 @@
-
 <div class="row hero-unit mv-header">
   <h1>Mailvelope</h1>
 </div>
@@ -29,7 +28,7 @@
           <img src="img/ChromeWebStore_Badge_v2_340x96.png" style="width: 250px;"/>
         </a>
       </div>
-      <p>After installation, a lock icon is displayed in the main Google Chrome toolbar, right of the address bar, which goes to Mailvelope's main menu.</p>
+      <p>After installation, a lock icon is displayed in the main Google Chrome toolbar, to the right of the address bar, which goes to Mailvelope's main menu.</p>
       <div class="thumbnail well">
         <img class="img-rounded" src="img/help/browser_action.png" alt="browser action menu">
         <div class="caption">
@@ -48,12 +47,12 @@
         <h1>Basics</h1>
       </div>
       <h2>Public-Key Cryptography</h2>
-      <p>OpenPGP and therefore Mailvelope use public-key cryptography which means a key is split up in two parts: <strong>public</strong> and <strong>private</strong> key with different purposes:
+      <p>OpenPGP and therefore Mailvelope use public-key cryptography which means a key is split into two parts: <strong>public</strong> and <strong>private</strong> keys with different purposes:
       <ul>
         <li class="text-success">Public key &ndash; Used to encrypt a message. Can and should be available to everybody.</li>
         <li class="text-error">Private key &ndash; Used to decrypt a message. Needs to be stored securely. Access is restricted by password.</li>
       </ul>
-      This concept is explained on the page <a href="http://gpg4win.de/doc/en/gpg4win-compendium_8.html" target="_blank">"How Gpg4win works"</a> in an illustrative way. Gpg4win is another application based on OpenPGP and the shown principles also apply to Mailvelope.
+      This concept is illustrated on the page <a href="http://gpg4win.de/doc/en/gpg4win-compendium_8.html" target="_blank">"How Gpg4win works"</a>. Gpg4win is another application based on OpenPGP and the same principles also apply to Mailvelope.
       </p>
       <h2>Key Exchange</h2>
       <p>In order to send encrypted emails to a peer, you must have the public key of the recipient. Therefore, before secure communication can happen between two people, they must exchange their public keys with each other. There are multiple ways that public keys can be distributed:
@@ -64,7 +63,7 @@
       </ul>
       </p>
       <h2 id="messageFormats">Message Formats</h2>
-      <p>Public and private keys, as well as encrypted messages in OpenPGP are encoded in a certain text format that allows them to be exchanged or stored in text files.</p>
+      <p>Public and private keys, as well as encrypted messages in OpenPGP, are encoded in a certain text format that allows them to be exchanged or stored as text files.</p>
       <p>For example, a public key would look like this:</p>
       <pre>-----BEGIN PGP PUBLIC KEY BLOCK-----<br>Version: OpenPGP.js v.1.20121015<br>Comment: http://openpgpjs.org<br><br>xo0EUI5G5QEEAI7NxVI17OibiyMTAYcLEdForPt/46+4RrUk/DMRNetAV4Ve<br>UJaFPRLuWcZjq8BFV01nzGQd3NG8CDO8qI37fVUXVGe03mP8f8DB2GP/cmu3<br>mOzlEpTa4WsaKTgdx8E00qJZ6v66NQVRbm/7JG8Psj/didl2cQHeGCGCYsx9<br>OrfLABEBAAHNF0pvaG4gRG9lIDxqb2huQGRvZS5vcmc+wpwEEAECABAFAlCO<br>RuYJEBLyB87MrGtYAADcQgP/dVVIIldGaeozWFAcM94+uMfdbY9tpOK/0kHE<br>MDL5WqlHj865VloAdtk+rlDZ0NnW2gc92zMGW+a13zYHkvN8oE6UtUsG4uaQ<br>GqSbqWF5pUQ+KK/fJ49NaH2p+nahdI9IpvmKowXaARKVY8QqBLzaXjGg3/VL<br>BI86am8qJEULisI=<br>=5VIW<br>-----END PGP PUBLIC KEY BLOCK-----</pre>
       <p>We see encoded data surrounded by lines that mark the beginning and end of this key.</p>
@@ -75,7 +74,7 @@
       <div class="page-header muted">
         <h1>Key Handling</h1>
       </div>
-      <p>Click on Mailvelope's lock icon <img src="img/help/cryptography-icon16.png"> in the browser extension toolbar to open the main menu. Choose <span class="badge badge-info">Options</span> to navigate to the key ring with all your keys:</p>
+      <p>Click on Mailvelope's lock icon <img src="img/help/cryptography-icon16.png"> in the browser extension toolbar to open the main menu. Choose <span class="badge badge-info">Options</span> to navigate to the key ring, which holds all your keys:</p>
       <div class="thumbnail well">
         <img class="img-rounded" src="img/help/key_ring.png" alt="key ring">
         <div class="caption">
@@ -83,7 +82,7 @@
         </div>
       </div>
       <h2>Key Generation</h2>
-      <p>To use Mailvelope, at least one key pair (consisting of public and private key) must be available. We can either generate a new key pair as explained in this section, or import an existing key pair as described below.</p>
+      <p>To use Mailvelope, at least one key pair (consisting of a public and private key) must be available. We can either generate a new key pair as explained in this section, or import an existing key pair as described below.</p>
       <p>Click on <span class="badge badge-info">Generate Key</span> to open the key generation dialog:</p>
       <div class="thumbnail well">
         <img class="img-rounded" src="img/help/key_generation.png" alt="key generation">
@@ -128,14 +127,14 @@
       <h2>Message Encryption</h2>
       <h3>Encryption in External Editor</h3>
       <p>Starting with Mailvelope v0.6 the default behavior is to compose and encrypt messages in an external editor.</p>
-      <p>The compose button <img src="img/help/editor_button.png" class="mv-button"> is displayed in all mail compose areas of the mail provider and will launch Mailvelope's external editor.</p>
+      <p>The compose button <img src="img/help/editor_button.png" class="mv-button"> is displayed in all email compose areas of the webmail provider and will launch Mailvelope's external editor.</p>
       <div class="thumbnail well mv-white">
         <img class="img-rounded" src="img/help/launch_editor.png" alt="launch editor button">
         <div class="caption">
           <h4>Compose button</h4>
         </div>
       </div>
-      <p>Clicking on the compose button will open a new popup with a separate editor. This ensures that the mail creation and encryption process is completely isolated from the mail provider.</p>
+      <p>Clicking on the compose button will open a new popup with a separate editor. This ensures that the email creation and encryption process is completely isolated from the webmail provider.</p>
       <div class="thumbnail well mv-white">
         <img class="img-rounded" src="img/help/compose_mail_popup.png" alt="Mailvelope's external editor">
         <div class="caption">
@@ -172,15 +171,15 @@
       <div class="thumbnail well mv-white">
         <img class="img-rounded" src="img/help/encrypt_message_transfer.png" alt="encrypted message transfer">
         <div class="caption">
-          <h4>Encrypted message copied back to email provider</h4>
+          <h4>Encrypted message copied back to webmail provider</h4>
         </div>
       </div>
       <p>Now the encrypted message can be sent as usual.</p>
       <div class="alert">
-        <strong>Warning: don't use the email provider's window while the external editor is open.</strong> To transfer the encrypted message successfully, it's important that don't navigate away from the compose view of your email provider.
+        <strong>Warning: don't use the webmail provider's main window while the external editor is open.</strong> To transfer the encrypted message successfully, it's important that you don't navigate away from the compose view of your webmail provider.
       </div>
-      <h3>Encryption in Web Mail Editor</h3>
-      <p>Mailvelope offers also a second mode where messages are encrypted directly in the email provider's page. See section <a href="#security">Security</a> for how to activate this mode and what the security implications of this mode are.</p>
+      <h3>Encryption in Webmail Editor</h3>
+      <p>Mailvelope offers also a second mode where messages are encrypted directly in the webmail provider's page. See the  <a href="#security">Security</a> section for instructions on activating this mode and details on what the security implications of this mode are.</p>
       <div class="thumbnail well mv-white">
         <img class="img-rounded" src="img/help/encrypt_dialog.png" alt="encrypt dialog">
         <div class="caption">
@@ -220,45 +219,45 @@
       <div class="page-header muted">
         <h1>Watch List</h1>
       </div>
-      <p>Mailvelope comes preconfigured to work with the following email services:</p>
+      <p>Mailvelope comes preconfigured to work with the following webmail services:</p>
       <ul>
         <li>Gmail<sup>&trade;</sup></li>
         <li>GMX<sup>&trade;</sup></li>
         <li>Outlook.com<sup>&trade;</sup></li>
         <li>Yahoo!<sup>&reg;</sup> Mail</li>
       </ul>
-      <p>With its general approach it can be configured to work with any email provider. This can be done in the <em>Preferences</em> section of the <em>Options</em> view.</p>
+      <p>Using this general approach it can be configured to work with any webmail provider. This can be done in the <em>Preferences</em> section of the <em>Options</em> view.</p>
       <div class="thumbnail well">
         <img class="img-rounded" src="img/help/watch_list.png" alt="watch list">
         <div class="caption">
           <h4>Watch list</h4>
         </div>
       </div>
-      <p>The watch list defines a set of web sites that are enhanced with the functionality provided by Mailvelope.</p>
+      <p>The watch list defines a set of websites that are enhanced with the functionality provided by Mailvelope.</p>
       <h3>Deactivate Mailvelope for a site</h3>
       <p>By default Mailvelope is active for all sites in the watch list. To deactivate a site click on <span class="badge">Edit</span> in the corresponding row and change the <em>Active</em> value. Confirm with <span class="badge">Update</span>.</p>
       <h3>Add Website to Watch List</h3>
-      <p>Load the web site you want to add to the watch list in a browser tab (the active tab). Click on the lock icon <img src="img/help/cryptography-icon16.png"> in the browser extension toolbar to open the main menu. Choose <span class="badge badge-info">Add page</span>. The browser will open a new tab with Mailvelope's Options page and will add the web site to the watch list. Reload the web site to activate Mailvelope.</p>
+      <p>Load the website you want to add to the watch list in a browser tab (the active tab). Click on the lock icon <img src="img/help/cryptography-icon16.png"> in the browser extension toolbar to open the main menu. Choose <span class="badge badge-info">Add page</span>. The browser will open a new tab with Mailvelope's Options page and will add the website to the watch list. Reload the website to activate Mailvelope.</p>
       <div class="alert alert-info">
-        By choosing <span class="badge badge-info">Add page</span> Mailvelope analyzes the web site's frame structure and adds this information to the watch list. As the internal structure of the web site might change in different scenarios it is recommended to follow the following procedure when adding new web sites:
+        By choosing <span class="badge badge-info">Add page</span> Mailvelope analyzes the website's frame structure and adds this information to the watch list. As the internal structure of the website might change in different scenarios, the following procedure is recommended when adding new websites:
         <ol>
-          <li>Open your web mail provider and log in</li>
+          <li>Open your webmail provider's website and log in</li>
           <li>Navigate to your inbox and open an email</li>
           <li>Choose <span class="badge badge-info">Add page</span> from Mailvelope's main menu</li>
           <li>A new tab opens and a new item is added to the watch list</li>
-          <li>Switch back to your web mail and compose a new email</li>
-          <li>Again click on locker and choose: Add page</li>
+          <li>Switch back to the webmail site and compose a new email</li>
+          <li>Again click on the lock icon and choose <span class="badge badge-info">Add page</span></li>
           <li>Reload the tab with F5</li>
         </ol>
       </div>
       <div class="alert">
-        <em>Advanced:</em> when expanding a row in the watch list we see the frames that will be scanned for encrypted emails and email compose areas. If we can identify irrelevant frames (e.g. from ads) we can set the <em>Scan</em> value to false and thereby minimizing the scanning effort.
+        <em>Advanced:</em> when expanding a row in the watch list we see the frames that will be scanned for encrypted emails and email compose areas. If we can identify irrelevant frames (e.g., from ads) we can set the <em>Scan</em> value to false and thereby minimize the scanning effort.
       </div>
       <div class="alert alert-error">
-        It is also possible to manually add web sites and their frame structure to the watch list, however this is beyond the scope of this documentation.
+        It is also possible to manually add websites and their frame structure to the watch list, however this is beyond the scope of this documentation.
       </div>
       <h3>Remove Website from Watch List</h3>
-      <p>Load the web site you want to remove from the watch list in a browser tab (the active tab). Click on the lock icon <img src="img/help/cryptography-icon16.png"> in the browser extension toolbar to open the main menu. Choose <span class="badge badge-info">Remove page</span>. The browser will open a new tab with Mailvelope's Options page and after confirmation will remove the web site from the watch list.</p>
+      <p>Load the website you want to remove from the watch list in a browser tab (the active tab). Click on the lock icon <img src="img/help/cryptography-icon16.png"> in the browser extension toolbar to open the main menu. Choose <span class="badge badge-info">Remove page</span>. The browser will open a new tab with Mailvelope's Options page and after confirmation will remove the web site from the watch list.</p>
       <div class="alert alert-success">
         Alternative: directly remove entries in the watch list with <span class="badge">Delete</span> button.
       </div>
@@ -270,12 +269,12 @@
         <h1>Security</h1>
       </div>
       <p>Mailvelope offers end-to-end encryption which means it must ensure that at no time secret data can leave the browser of the user.</p>
-      <p>Mailvelope's user interface consists of a set of isolated elements floating on top of the mail provider's UI elements. This tight integration improves usability, but also requires measures to prevent any data leakage.</p>
+      <p>Mailvelope's user interface consists of a set of isolated elements floating on top of the webmail provider's UI elements. This tight integration improves usability, but also requires measures to prevent any data leakage.</p>
       <p>The security goals for Mailvelope are as follows. All data must be safe even if:
       <ul>
         <li>A rogue sender is part of the communication</li>
-        <li>The mail provider has malicious intent</li>
-        <li>The mail provider was attacked or the user has a malicious tab opened</li>
+        <li>The webmail provider has malicious intent</li>
+        <li>The webmail provider was attacked or the user has a malicious tab opened</li>
       </ul>
       </p>
       <p>This attack scenario was thoroughly tested in a <a href="http://cure53.de/pentest-report_mailvelope.pdf" target="_blank">penetration test</a> by Cure53 who also helped with the design of the security concepts used by Mailvelope v0.6</p>
@@ -288,7 +287,7 @@
       </div>
       <h3>Security Token Concept</h3>
       <p>The security token consists of a three character code and a color that is known only to the user. It is generated randomly in the installation process of Mailvelope and can be changed in the above settings to a custom pattern.</p>
-      <p>All dialog windows of Mailvelope (password entry, mail compose editor, mail decrypt popup) will display the security token, thereby clearly identifying their origin. A spoofed dialog can be identified by a missing or wrong security token. Mailvelope can not prevent certain manipulations but with this approach the user can always identify if something is wrong.</p>
+      <p>All dialog windows of Mailvelope (password entry, mail compose editor, mail decrypt popup) will display the security token, thereby clearly identifying their origin. A spoofed dialog can be identified by a missing or wrong security token. Mailvelope cannot prevent certain manipulations but with this approach the user can always identify if something is wrong.</p>
       <div class="thumbnail well">
         <img class="img-rounded" src="img/help/security_token.png" alt="security token">
         <div class="caption">
@@ -297,8 +296,8 @@
       </div>
       <h3>Decryption Mode</h3>
       <p>Two different modes to display the encrypted messages are available:</p>
-      <h4>Inline (on the page of the mail provider)</h4>
-      <p>This offers the best usability. The encrypted messages are displayed inside an isolated sandbox that is not accessible by the mail provider.</p>
+      <h4>Inline (on the page of the webmail provider)</h4>
+      <p>This offers the best usability. The encrypted messages are displayed inside an isolated sandbox that is not accessible by the webmail provider.</p>
       <p>The watermark shown in the background of the decrypted message has the same purpose as the security token concept: we can clearly identify that the displayed message is the one decrypted by Mailvelope.</p>
       <div class="thumbnail well">
         <img class="img-rounded" src="img/help/decrypted_watermark.png" alt="decrytped message with watermark">
@@ -307,17 +306,17 @@
         </div>
       </div>
       <p>For the watermark, the characters of the security token are used, displayed in light gray.</p>
-      <p>This variant is vulnerable to clickjacking attacks which can be summarized as: Mailvelope can not guarantee that a click on a link in a decrypted message results in a navigation to a page that was intended by the author of the message. For most users this should be an acceptable risk. If in doubt use the following popup mode, which is immune against such attacks.</p>
+      <p>This variant is vulnerable to clickjacking attacks, which means that Mailvelope cannot guarantee that a click on a link in a decrypted message results in navigation to the page that was intended by the author of the message. For most users this should be an acceptable risk. If in doubt use the following popup mode, which is immune to such attacks.</p>
       <h4>Popup (in a separate dialog)</h4>
       <p>Decrypted messages are displayed in a separate modal popup.</p>
       <h3>Encryption Mode</h3>
-      <p>Two different modes are available to compose the secure message:</p>
+      <p>Two different modes are available to compose a secure message:</p>
       <h4>In a separate editor window</h4>
-      <p>The mail is composed in a separate popup window and only transferred in encrypted form back to the mail provider editor. In this variant the clear text of the message will never leave Mailvelope.</p>
-      <h4>In the compose editor of the email provider</h4>
-      <p>You compose your email in the editor of the email provider. That means before you encrypt the email, the provider potentially has access to what you type. This comes often as a feature with the auto-save drafts function: the incomplete (and unencrypted) mail is stored every few seconds on the server. This variant might make sense for your special use case, but be aware that this violates the concept of client-side encryption as the unencrypted message or parts of it can leave your browser.</p>
+      <p>The mail is composed in a separate popup window and only transferred in encrypted form back to the webmail provider's editor. In this variant the clear text of the message will never leave Mailvelope.</p>
+      <h4>In the compose editor of the webmail provider</h4>
+      <p>You compose your email in the editor of the webmail provider. That means before you encrypt the email, the provider potentially has access to what you type. This comes often as a feature with the auto-save drafts function: the incomplete (and unencrypted) mail is stored every few seconds on the server. This variant might make sense for your special use case, but be aware that this violates the concept of client-side encryption as the unencrypted message or parts of it can leave your browser.</p>
       <h3>Remember Password</h3>
-      <p>Mailvelope can cache passwords for private keys in local memory. You can activate the cache in the security settings or on the password dialog. Passwords have a lifetime which can be adjusted in the settings and are deleted at the latest when you close the browser window.</p>
+      <p>Mailvelope can cache passwords for private keys in local memory. You can activate the cache in the security settings or with the password dialog. Passwords have a lifetime which can be adjusted in the settings and are always deleted when you close the browser window.</p>
       <!--<p>Please check also the <a href='http://www.mailvelope.com/faq#security'>FAQ section</a> for further details.</p>-->
     </section>
     <!-- Limitations
@@ -327,7 +326,7 @@
         <h1>Limitations</h1>
       </div>
       <ul>
-        <li>Mailvelope currently does not support signing of messages. This feature is under development.</li>
+        <li>Mailvelope currently does not support digital signing of messages. This feature is under development.</li>
       </ul>
     </section>
   </div>
